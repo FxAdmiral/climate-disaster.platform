@@ -19,6 +19,7 @@ app.use(express.json());
 app.use('/api/flood', require('./routes/flood'));
 app.use('/api/discharge', require('./routes/discharge'));
 app.use('/api/risk', require('./routes/risk'));
+app.use('/api/predict', require('./routes/prediction'));
 app.use('/api/ingest', require('./routes/ingestion'));
 
 app.get('/health', (req, res) => res.json({ status: 'ok' }));
