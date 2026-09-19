@@ -10,7 +10,9 @@ const riskService = require('../services/riskService');
 
 const METHODOLOGY_NOTE =
   'Provisional scoring: percentile rank of flood extent and river discharge ' +
-  'against historical record, 50/50 weighted. Not yet validated by the Data Analyst.';
+  'against historical record, 50/50 weighted. Not yet validated by the Data Analyst ' +
+  'due to the voluminous size of historical data, well over 500GB of storage and counting, ' +
+  'I must say they deserve their flowers.';
 
 async function getRiskOverview(req, res) {
   try {
